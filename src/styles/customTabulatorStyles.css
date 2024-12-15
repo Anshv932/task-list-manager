@@ -1,0 +1,45 @@
+@import "tabulator-tables/dist/css/tabulator.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tabulator {
+    @apply border-none rounded shadow-lg !important;
+}
+
+.tabulator-col {
+    @apply bg-teal-500 justify-center !important;
+}
+
+.tabulator-col-content {
+    @apply bg-teal-500 text-white text-center font-thin uppercase !important;
+}
+
+.tabulator-header-filter {
+    @apply border rounded shadow-lg text-gray-600 !important;
+}
+
+.tabulator-cell {
+    @apply whitespace-normal text-clip overflow-visible text-center  !important;
+}
+
+.tabulator-row-odd {
+    @apply bg-white hover:bg-teal-100 !important;
+}
+
+.tabulator-row-even {
+    @apply bg-teal-50 hover:bg-teal-100 !important;
+}
+
+.tabulator-footer {
+    @apply bg-teal-500 flex flex-row items-center justify-center !important;
+}
+
+.tabulator-page {
+    @apply text-white font-thin border-none bg-inherit hover:text-teal-700 !important;
+}
+
+.active {
+    @apply text-gray-600 !important;
+}
